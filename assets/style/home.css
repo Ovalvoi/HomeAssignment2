@@ -1,0 +1,108 @@
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    
+}
+
+.hero .profile-pic {
+    width: 150px;
+    height: auto;
+    background-size: cover;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    margin-bottom: 5px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.cta-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cta-column h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007bff;
+    width: 20px;
+    text-align: center;
+}
+
+.project-showcase .project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.project-showcase h4 {
+    margin-bottom: 5px;
+}
+
+.project-showcase p {
+    margin-bottom: 10px;
+}
+
+.project-showcase a {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+    .call-to-action {
+        flex-direction: column;
+        gap: 40px; 
+    }
+
+    .hero h1 { font-size: 28px; }
+    .hero h2 { font-size: 18px; }
+}

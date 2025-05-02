@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/style/global.css">
+  <link rel="stylesheet" href="assets/style/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="services/global.js" defer></script>
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav>
+      <div class="logo">Yuval I.</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="/assets/imgs/profile.jpg" alt="photo of me" class="profile-pic">
+      <h1>Yuval I.</h1>
+      <h2>Student</h2>
+      <a href="assets/resume.pdf" target="_blank" class="cta-button">View Resume</a>
+    </section>
+
+    <section class="call-to-action">
+      <div class="cta-column contact-info">
+        <h3>Contact Me</h3>
+        <p><a href="tel:+972505203080"><i class="fas fa-phone"></i>+972505203080</a></p>
+        <p><a href="mailto:yuval@mail.com"><i class="fas fa-envelope"></i>yuval@mail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/yuval-i/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn Profile</a></p>
+      </div>
+      <div class="cta-column project-showcase">
+        <h3>Featured Project</h3>
+        <a href="https://ovalvoi.github.io/Tokyo/" target="_blank">
+          <img src="assets/imgs/tokyo.png" alt="Tokyo-ScreenShot" class="project-image">
+        </a>
+        <h4>Home Assignment Project 1</h4>
+        <p>Tokyo</p>
+        <a href="https://ovalvoi.github.io/Tokyo/" target="_blank">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yuval i. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
