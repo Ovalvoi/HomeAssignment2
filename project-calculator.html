@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Quote Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Calculator</title>
+    <link rel="stylesheet" href="assets/style/global.css">
+    <link rel="stylesheet" href="assets/style/calcualtor.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="services/global.js" defer></script>
+    <script src="services/calculator.js" defer></script>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+    <header>
+        <nav>
+            <div class="logo">Yuval Idan Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
+            </ul>
+
+            <button id="dark-mode-toggle" class="dark-mode-button" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon" style="display: none;"></i>
+            </button>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h1>Project Price Calculator</h1>
+            <form id="price-calculator-form">
+                <div class="form-group">
+                    <label>Site Type:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="business" name="siteType" value="business" required>
+                        <label for="business">Business Site</label>
+                        <input type="radio" id="store" name="siteType" value="store">
+                        <label for="store">Online Store</label>
+                        <input type="radio" id="blog" name="siteType" value="blog">
+                        <label for="blog">Blog</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Number of Pages (1-10):</label>
+                    <input type="number" id="pages" name="pages" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-group">
+                     <label>Custom Design:</label>
+                     <div class="radio-group">
+                         <input type="radio" id="designYes" name="customDesign" value="yes" required>
+                         <label for="designYes">Yes</label>
+                         <input type="radio" id="designNo" name="customDesign" value="no" checked>
+                         <label for="designNo">No</label>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="calc-button">Calculate Price</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+
+            <div id="price-result" class="price-result-display" style="display: none;">
+                <h2>Estimated Price:</h2>
+                <p id="calculated-price"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yuval idan. All rights reserved.</p>
+    </footer>
 </body>
 </html>

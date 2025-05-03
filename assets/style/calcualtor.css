@@ -1,0 +1,186 @@
+.calculator-section {
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 15px var(--box-shadow-color);
+    transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.calculator-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    border-bottom-color: var(--border-color);
+}
+
+#price-calculator-form .form-group {
+    margin-bottom: 25px;
+}
+
+#price-calculator-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+#price-calculator-form input[type="number"],
+#price-calculator-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+#price-calculator-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+
+#price-calculator-form .radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#price-calculator-form .radio-group input[type="radio"] {
+    vertical-align: middle;
+    margin-top: -2px;
+    cursor: pointer;
+   
+    appearance: none;
+    background-color: var(--main-bg);
+    border: 1px solid var(--border-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+#price-calculator-form .radio-group input[type="radio"]:checked {
+     border: 1px solid var(--link-color);
+}
+
+#price-calculator-form .radio-group input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--link-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color var(--transition-speed) ease;
+}
+
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.form-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color var(--transition-speed) ease, transform 0.1s ease, color var(--transition-speed) ease;
+}
+
+.form-buttons button:active {
+    transform: scale(0.98);
+}
+
+
+.calc-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.calc-button:hover {
+    background-color: #218838;
+}
+
+.reset-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+
+.price-result-display {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e2f0ff;
+    border: 1px solid #b8d6f3;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.price-result-display h2 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    transition: color var(--transition-speed) ease;
+}
+
+#calculated-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+     transition: color var(--transition-speed) ease;
+}
+
+
+body.dark-mode .price-result-display {
+    background-color: #003f7f;
+    border-color: #0056b3;
+}
+
+body.dark-mode .price-result-display h2 {
+    color: var(--link-color);
+}
+
+body.dark-mode #calculated-price {
+    color: var(--text-color);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .calculator-section {
+        padding: 20px;
+    }
+    .calculator-section h1 {
+        font-size: 28px;
+    }
+    .form-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .form-buttons button {
+        width: 100%;
+    }
+}

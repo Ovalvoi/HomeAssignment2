@@ -1,46 +1,51 @@
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background-color: #e9ecef;
+    background-color: var(--section-bg);
     border-radius: 8px;
-    
+    transition: background-color var(--transition-speed) ease;
 }
 
 .hero .profile-pic {
     width: 150px;
-    height: auto;
-    background-size: cover;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10%;
     margin-bottom: 20px;
-    border: 5px solid #fff;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    border: 5px solid var(--main-bg);
+    box-shadow: 0 0 15px var(--box-shadow-color);
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
 .hero h1 {
     margin-bottom: 5px;
     border-bottom: none;
     padding-bottom: 0;
+    color: var(--text-color);
 }
 
 .hero h2 {
     margin-bottom: 20px;
     font-weight: 300;
-    color: #666;
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--button-bg);
+    color: var(--button-text);
     padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: var(--link-color);
+    color: var(--button-text);
+    opacity: 0.9;
     text-decoration: none;
 }
 
@@ -50,8 +55,9 @@
     gap: 30px;
     margin-top: 40px;
     padding: 20px;
-    background: #f8f9fa;
+    background: var(--section-bg);
     border-radius: 8px;
+    transition: background-color var(--transition-speed) ease;
 }
 
 .cta-column {
@@ -60,18 +66,25 @@
 }
 
 .cta-column h3 {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 5px;
     margin-bottom: 15px;
+    color: var(--text-color);
+    transition: border-color var(--transition-speed) ease;
 }
 
 .contact-info p {
     margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.contact-info a {
+    color: var(--link-color);
 }
 
 .contact-info i {
     margin-right: 10px;
-    color: #007bff;
+    color: var(--icon-color);
     width: 20px;
     text-align: center;
 }
@@ -81,26 +94,31 @@
     max-width: 300px;
     height: auto;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
+    transition: border-color var(--transition-speed) ease;
 }
 
 .project-showcase h4 {
     margin-bottom: 5px;
+    color: var(--text-color);
 }
 
 .project-showcase p {
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 
 .project-showcase a {
     font-weight: bold;
+    color: var(--link-color);
 }
+
 
 
 @media screen and (max-width: 767px) {
     .call-to-action {
         flex-direction: column;
-        gap: 40px; 
+        gap: 40px;
     }
 
     .hero h1 { font-size: 28px; }
