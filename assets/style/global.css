@@ -155,11 +155,54 @@ footer p {
       font-size: 24px;
   }
 
+  .nav-links {
+      position: fixed;
+      right: 0px;
+      height: calc(100vh - 80px); 
+      top: 80px;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+
+      padding-top: 40px;
+  }
+
+  .nav-links li {
+      opacity: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+  }
 
   .burger {
       display: block;
   }
 
+  .nav-active {
+      transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+
+  .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+      opacity: 0;
+  }
+  .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
 
   main {
       margin: 10px auto;
