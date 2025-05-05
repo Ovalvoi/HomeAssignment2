@@ -265,7 +265,7 @@ footer p {
     width: 60%;
     transform: translateX(100%);
 
-    transition: transform 0.3s ease-in, background-color var(--transition-speed) ease;
+    transition: transform 0.3s ease-in, background-color var(--transition-speed) ease-in;
     padding-top: 40px;
     z-index: 999;
   }
