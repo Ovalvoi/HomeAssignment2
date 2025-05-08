@@ -1,48 +1,9 @@
+@import url('variables.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-:root {
-
-  --bg-color: #f4f4f4;
-  --text-color: #333;
-  --header-footer-bg: linear-gradient(to right, #8e2de2, #4a00e0);
-  --header-footer-text: #fff;
-  --nav-hover-bg: #37176c;
-  --main-bg: #fff;
-  --section-bg: #f8f9fa;
-  --border-color: #eee;
-  --link-color: #007bff;
-  --button-bg: #007bff;
-  --button-text: #fff;
-  --icon-color: var(--link-color);
-  --box-shadow-color: rgba(0, 0, 0, 0.1);
-  --toggle-icon-color: #ffeb3b;
-
-
-  --transition-speed: 0.3s;
-}
-
-
-body.dark-mode {
-
-  --bg-color: #222;
-  --text-color: #eee;
-  --header-footer-bg: linear-gradient(to right, #5c1a85, #330099);
-  --header-footer-text: #eee;
-  --nav-hover-bg: #37176c;
-  --main-bg: #333;
-  --section-bg: #444;
-  --border-color: #555;
-  --link-color: #61dafb;
-  --button-bg: var(--link-color);
-  --button-text: #222;
-  --icon-color: var(--link-color);
-  --box-shadow-color: rgba(255, 255, 255, 0.1);
-  --toggle-icon-color: var(--link-color);
 }
 
 body {
